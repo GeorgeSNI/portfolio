@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    border: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 
+Beige: #FCFCFC
+Grey: #292B2A
+Green: #02B86B
+border: 1px solid red;
+*/
+
+html {
+    background-color: #FCFCFC;
+    height: 100%;
+}
+
+/*HEADER*/
+header {
+    background-color: #292B2A ;
+    border-bottom: 3px solid #02B86B;
+    color: #FCFCFC ;
+
+}
+header h1{
+    padding: 1rem;
+}
+/*NAV*/
+nav ul {
+    list-style-type: none;
+
+        
+}
+nav li{
+    display: inline-block;
+    color: #FCFCFC;
+    background-color: #02B86B;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin: 10px;
+    
+}
+nav a {
+    color: #FCFCFC;
+    text-align: left;
+}
+/*ABOUT ME*/
+.about-grid{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+}
+#profilepic {
+    width: 100%;
+    max-width: 500px;
+}
+.about-me{
+    max-width: 500px;
+}
+.about-me h2, p{
+    line-height: 3;
+    padding: 1rem;
+}
+
+/*MORE ABOUT ME*/
+#more-about{
+    background-color: #292B2A;
+    color: #FCFCFC;
+    border-top: 3px solid #02B86B;
+    border-bottom: 3px solid #02B86B;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    width: 100%;
+}
+#more-about img {
+    width: 70%;
+    object-fit: contain ;
+
+}
+.more-box {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*PROJECTS*/
+.projects{
+    padding: 2rem;
+    text-align: center;
+    justify-items: center;
+}
+#projects-box{
+    max-width: 800px;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/*SKILLS*/
+.skills{
+    padding: 1rem;
+    background-color: #02B86B;
+}
+.container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.container img {
+    max-width: 100px;
+}
+#skills-box{
+    text-align: center;
+}
+.skill-box {
+    padding-top: 1.5rem;
+}
+
+/*SKILLS*/
+footer{
+    background-color: #02B86B;
+    color: #FCFCFC;
+}
+
+/*CONTACT*/
+
+.banner {
+    width:100%;
+}
+.banner img{
+    width:100%;
+}
+
+.contact-text{
+    padding: 1rem;
+    background-color: #292B2A;
+    color: #FCFCFC;
+}
+.contact-cards{
+    background-color: #292B2A;
+    display: grid;
+    justify-items: center;
+    grid-template: 1fr / repeat(4, 1fr);
+    padding: 1rem;
+}
+.contact-cards img{
+    max-width: 100px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 375px) {
+p{
+    font-size: 0.7rem;
+}
+.contact-cards img {
+    max-width: 75px;
+}
+footer{
+    min-height: 250px;
+}
+}
+
+@media screen and (max-width: 768px) {
+p{
+    font-size: 0.8rem;
+}
+    
+}
